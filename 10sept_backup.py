@@ -73,3 +73,24 @@ print(l1)  # asc to desc
 """l1.sort(reverse=True)  # desc to asc 
 print(l1)
 """
+
+# slicing  : 
+l1=[100,10,20,30,40,1000,60,70,90,900,110]
+# index : start : 0 1 2  ==> pos  ==> l to r 
+# neg index : -1 -2  == > r to l 
+print(l1[3])
+print(l1[ 2 :5])  # 2 starting  index  5 ending index 
+print(l1[  :8])  
+print(l1[2  :])  
+print(l1[  : ])  
+print(l1[-3])
+print(l1[-3 : -9])
+print(l1[-9 : -3])
+
+print(l1[2: 8 :2])   # 2 start  index , 8 ending  index step 2
+print(l1[ : : 2])
+print(l1[ : : -2])
+print(l1[ : : -1])
+
+
+
