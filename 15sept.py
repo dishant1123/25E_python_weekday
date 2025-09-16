@@ -59,5 +59,20 @@ task  :1
 
 input  : t1=(10,2,3,4,5,6,7,89.78,10)
 output  : t1=(10,2,3,4,5,6,7,89.78,10,"ved")
+
+task  :2 
+
+MCQ : 
+
+t1=(1,2,3,4, [89 ,90,"aashta"],78 ,45 )
+t1[4].append("ved")
+print(t1)
+
+a. error   # ved ,aashta
+b. t1=(1,2,3,4, [89 ,90,"aashta","ved"],78 ,45 )  # meet 
+c. t1=(1,2,3,4, [89 ,90,"aashta"],"ved",78 ,45 )
+d. tupel is immutable 
+ans : B
 """
+
 
