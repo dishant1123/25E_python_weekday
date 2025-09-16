@@ -69,3 +69,80 @@ input  a =10
 input  b =20
 output  : 1020
 """
+"""a= int(input("enter the  number  1:"))
+b= int(input("enter the  number  2:"))
+print(a,end="")
+print(b)
+"""
+
+# operator  : 
+"""
+1. airthematic : + - * / % // 
+2. comaprison  : < > <= >= == !=
+3. logic : and or not 
+4. assignment : = += -= *= /= %= //=
+5. member : in ,not in
+
+"""
+a=1093 
+b=1000 
+# print(a/b)  # div 
+# print(a//b)  # floor  div 
+# print(a%b)
+# print(a!=b)
+# print(a>b and a!=b)
+# print(a>b or a!=b)
+# print(a>b is not a!=b)
+
+# a= a+b 
+"""a+=b   # += , -= , *= , //= , %=   ==> assign 
+print(a)
+"""
+"""
+l1=[1,2,3,4,"khilav"]
+print(20 in l1)
+print(2  not in l1)
+"""
+
+# conditional statement  :
+"""
+syntax : 
+
+if condition : 
+    print 
+else :
+    print 
+""" 
+
+# a=int(input("enter the  number  1:"))
+# b=int(input("enter the  number  2:"))
+
+"""if a>b :
+    print("a is  big")
+else :
+    print("b is  big")
+"""
+# print("a is  big ")if a>b else print("b is  big")
+
+"""
+nested if : 
+
+if con :
+    print 
+elif con :
+    print
+else :
+    print
+"""
+a=int(input("enter the  number  1:"))
+b=int(input("enter the  number  2:"))
+c=int(input("enter the  number  3:"))
+
+if a>b and a>c :
+    print("a is  big")
+elif b>a and b>c :
+    print("b is  big")
+elif c>a and c>b:
+    print("c is  big")
+else: 
+    print("all are  equal")
