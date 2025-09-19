@@ -199,9 +199,12 @@ print(t1.count(45))
 """
 # convert tuple  to  list : 
 
+"""
 t1=(1,2,45,3,4,5,6,90,89.04)
 
 l2 =list(t1)
 print(l2)
 l2.append("pratham")
 print(tuple(l2))
+"""
+
