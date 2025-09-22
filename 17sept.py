@@ -110,3 +110,65 @@ input  :  pratham 90  aashta 91  ved 99
 output  : {"pratham" : 90 , "aashta" : 91 ," ved ": 99}
 
 """
+
+"""d1={}
+for i in range(3):
+    name =input("enter the name  : ")
+    marks =int(input("enter the  marks  : "))
+    d1[name]=marks
+print(d1)  # {'yash': 90, 'pratham': 45, 'krishna': 99} 
+"""
+# above  dict  sorted though  marks  : 
+"""
+output  : {"pratham" : 45 , " yash ": 90, krishna" : 99}
+"""
+"""sorted_value  =sorted(d1.values())
+print(sorted_value)  # [45, 90, 99] 
+d2={}
+for k in sorted_value: # [45, 90, 99]
+    for i ,j in d1.items(): # {'yash': 90, 'pratham': 45, 'krishna': 99} 
+        if k ==j : 
+            d2[i]=k
+print(d2)
+"""
+# task  :3 
+
+"""n=input("enter the  string  : ")
+d1={}
+
+for i in n:   # pratham 
+    if i in d1:
+        d1[i]+=1   # d1[p] =1  
+    else :
+        d1[i]=1
+print(d1)
+"""
+# n=int(input("enter the number  : "))
+# l2=[]
+# for i in range(n):
+#     element =int(input("enter the  element  : "))
+#     l2.append(element)
+# print(l2)
+"""
+oddsum=0 
+evensum =0 
+for i in l2 : # [1,2,4]
+    if i %  2 ==0 :
+        evensum +=i 
+    else :
+        oddsum +=i
+print("evensum : ",evensum)
+print("oddsum :",oddsum)
+"""
+
+n=int(input("enter the number  : "))
+l2=[]
+for i in range(n):
+    element =int(input("enter the  element  : "))
+    l2.append(element)
+print(l2)
+l3=[] 
+for i in l2 : # [1,2,2,3,3,4,4,5,6] 
+    if i not in l3 :
+        l3.append(i)# l3 =[1]
+print(l3)
