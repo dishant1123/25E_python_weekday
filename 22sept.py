@@ -19,7 +19,7 @@ print(sorted(s1))
 
 s1 ="my name is ved."
 
-print(s1[2])
+"""print(s1[2])
 print(s1[3])
 print(s1[2 :5])
 print(s1[-3])
@@ -32,7 +32,7 @@ print(s1[1 :8 :2])
 print(s1[  :  :2])
 print(s1[  :  :-2])
 print(s1[  :  :-1])
-
+"""
 #            -5 -4  -3 -2 -1  0   1 2 3 4 5 6  
 
 """
@@ -51,3 +51,35 @@ output 1:  fulor
 output 2:  coll  
  
 """
+"""s1=input("enter the  string  : ")  # color 
+s2=input("enter the  string  : ")  # full 
+
+s4 =s1[ : 3 ] + s2[3: ]
+s3 = s2[ :3 ] + s1[3 : ]
+
+print(s3)
+print(s4)
+"""
+
+# method  : 
+s1 ="My Name Is ved."
+
+"""print(s1.capitalize())
+print(s1.upper())
+print(s1.lower())
+print(s1.title())
+print(s1.swapcase())
+print(s1.casefold())
+
+"""
+
+s2= "happy diwali"
+"""
+print(s2)
+print(s2.center(100))
+print(s2.center(50,"="))
+print(s2.ljust(50,"="))
+print(s2.rjust(50,"="))
+"""
+
+s1 ="My Name Is ved."
