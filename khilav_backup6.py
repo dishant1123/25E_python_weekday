@@ -18,15 +18,77 @@ for i in range(1,6):
     print()
 """
 #2 : 
-"""for i in range(1,6):
+"""
+for i in range(1,6):
     for j in range(1,i+1):
         print("*",end=" ")
     print()
 """
 
 #3 :
+"""
 for i in range(1,6):
     for j in range(5,i-1,-1):
         print("*",end=" ")
     print()
- 
+"""
+
+"""
+7.         8.           9.          10. 
+  
+* * * * *   * * * * *         *      * 
+  * * * *    * * * *        * *     * *
+    * * *     * * *       * * *    * * * 
+      * *      * *      * * * *   * * * *
+        *       *     * * * * *  * * * * *
+"""
+# 7 : 
+"""
+for i in range(1,6):
+    for k in range(1,i):
+        print(" ",end=" ")
+    for j in range(5,i-1,-1):
+        print("*",end=" ")
+    print()
+"""
+# 8 :
+"""
+for i in range(1,6):
+    for k in range(1,i):
+        print(" ",end="")
+    for j in range(5,i-1,-1):
+        print("*",end=" ")
+    print()
+"""
+
+# 9 :
+"""for i in range(1,6):
+    for k in range(5,i,-1):
+        print(" ",end=" ")
+    for j in range(1,i+1):
+        print("*",end=" ")
+    print()
+"""
+#10 : 
+"""
+for i in range(1,6):
+    for k in range(5,i,-1):
+        print(" ",end="")
+    for j in range(1,i+1):
+        print("*",end=" ")
+    print()
+"""
+
+# full pyramid :
+for i in range(1,6):
+    for k in range(5,i,-1):
+        print(" ",end="")
+    for j in range(1,i+1):
+        print("*",end=" ")
+    print()
+for i in range(1,6):
+    for k in range(1,i):
+        print(" ",end="")
+    for j in range(5,i-1,-1):
+        print("*",end=" ")
+    print()
