@@ -81,5 +81,3 @@ print(s2.center(50,"="))
 print(s2.ljust(50,"="))
 print(s2.rjust(50,"="))
 """
-
-s1 ="My Name Is ved."

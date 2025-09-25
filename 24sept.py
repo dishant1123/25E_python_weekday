@@ -1,6 +1,6 @@
 # index ,  r index ,find  , r find :  
 
-s1 ="my name is ved."
+# s1 ="my name is ved."
 
 """
 print(s1.index("m"))
@@ -15,7 +15,7 @@ print(s1.find("ame"))
 print(s1.find("e"))
 print(s1.find("e",7,20))
 """
-s1 ="my name is the ved patel."
+# s1 ="my name is the ved patel."
 
 """print(s1.rindex("e"))
 print(s1.rindex("e",4,23))
@@ -78,5 +78,4 @@ ask user to enter the  string  and  replace the first space and last space with 
 input  :  my name is ved. 
 output : my_name is_ved. 
 """
-
 
