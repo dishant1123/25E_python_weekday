@@ -41,29 +41,34 @@ for i in range(1,10):
     print(i,end=" ")
 """
 # match  : 
-
-a= int(int(input("enter a : ")))
-b= int(int(input("enter b : ")))
-
-print("1.addition ")
-print("2.subtraction ")
-print("3.multiplication ")
-print("4.division ")
-print("5.modulus ")
-print("6.add new  number  ")
-print("7.exit ")
-choice = int(input("enter choice : "))
-match choice :
-    case 1 :
-        print(a+b)
-    case 2 :
-        print(a-b)
-    case 3 :
-        print(a*b)
-    case 4 :
-        print(a/b)
-    case 5:
-        print(a%b)
+while True:
+    a= int(int(input("enter a : ")))
+    b= int(int(input("enter b : ")))
+    while True:
+        print("1.addition ")
+        print("2.subtraction ")
+        print("3.multiplication ")
+        print("4.division ")
+        print("5.modulus ")
+        print("6.add new  number  ")
+        print("7.exit ")
+        choice = int(input("enter choice : "))
+        match choice :
+            case 1 :
+                print(a+b)
+            case 2 :
+                print(a-b)
+            case 3 :
+                print(a*b)
+            case 4 :
+                print(a/b)
+            case 5:
+                print(a%b)
+            case 7 :
+                break
+    sure = input("are you sure you want to continue (y/n) : ")
+    if sure =="n":
+        break
 """
 1. exit 
 2. add new number :  
