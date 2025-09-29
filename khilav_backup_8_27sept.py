@@ -114,6 +114,7 @@ l1=[1,2,3,4,5]
 
  
 """
+"""
 n=int(input("enter the number : "))
 l1=[] 
 for i in range(n):
@@ -131,7 +132,7 @@ for i in l1 :
         oddsum+=i
 print("even sum : ",evensum)
 print("odd sum : ",oddsum)
-
+"""
 #task :2 
 """
 ask user to enter the number   store  in to the list and seprate pelidrome element into the list. 
@@ -140,3 +141,20 @@ l1=[122,121,134,156,141]
 output :[121,141]
 
 """
+
+l1=[122,121,134,156,141]
+l2 =[]
+for i in l1 : 
+    # if str(i) ==str(i)[ : : -1]:
+        # l2.append(i)
+# print(l2) 
+    temp =i
+    rev=0  
+    while temp >0 :
+        r= temp %10 
+        rev = rev *10 +r 
+        temp=temp //10
+    if rev ==i :
+        l2.append(i)
+print(l2)
+    
