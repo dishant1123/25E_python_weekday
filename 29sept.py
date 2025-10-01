@@ -41,3 +41,23 @@ Output:-No of Words=5
 	    No of letters=26(including whitespace)
 	    Longest Word=program
 """
+
+s1="This is the python program"
+
+count_words = len(s1.split())  # ["This", "is", "the", "python", "program"]
+print("No of Words=",count_words)
+
+number_of_letters = len(s1)  # 26
+print("No of letters=",number_of_letters)
+
+longest_word = max(s1.split(),key=len)
+print("Longest Word=",longest_word)
+
+# in KEY  you have to any built-in function or method ==> key =sorted ,key =sum 
+
+# task  :2 
+"""
+Write a Python program to reverse words in a string. 
+iniput  : "The quick brown fox jumps over the lazy dog." 
+ouput  : "dog  lazy the over jumps fox brown quick The"
+"""
