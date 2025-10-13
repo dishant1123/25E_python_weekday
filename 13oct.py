@@ -52,3 +52,38 @@ sorted second  value
 output  : [[3,0],[2,1],[4,5]]
 
 """
+# l1=["harix","ved","krishna","aashta","meet","krish","vatsal"]
+
+# a=sorted(l1)
+# print(a)
+
+# len sorted  : asc to desc : key 
+"""l1=["harix","ved","krishna","aashta","meet","krish","vatsal"]
+b =sorted(l1,key=len)  # key  special  method  ==> len max min sorted 
+print(b)
+"""
+
+"""
+def sorted_second(l1):
+    return l1[0]
+l1= [[2,1],[0,0],[4,5]]
+a =sorted(l1,key=sorted_second)
+print(a)
+"""
+#
+"""
+(0,0)2   (0,1)1     [2,1]  ==> index 0  ==> 2 ==> 1 ==> 1 
+(1,0)3   (1,1)0     [3,0] ==> index 1  ==>3 ==>0 0==>1 
+(2,0)4   (2,1)5     [4,5] ==> index 2  ==> 4 ==>0  5 ==> 1 
+"""
+"""print(l1[0]) 
+print(l1[1][1])
+"""
+"""
+for i in l1 :
+    print(i)
+"""
+
+l1= [[2,1],[0,0],[-4,5]]
+a= sorted(l1,key=lambda x : x[0])
+print(a)
