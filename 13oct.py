@@ -84,6 +84,8 @@ for i in l1 :
     print(i)
 """
 
+"""
 l1= [[2,1],[0,0],[-4,5]]
 a= sorted(l1,key=lambda x : x[0])
 print(a)
+"""
