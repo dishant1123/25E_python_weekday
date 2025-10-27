@@ -50,4 +50,26 @@ function  : random . range(1,20 )  ==> computer   randint(1,20)
 
 while  /  while  true  : 
 """
- 
+
+print("welcome to number guessing game")
+print("aapko number  guess krna he  1-20  mese")
+
+secret_number = r.randint(1,20)  # 
+attempts =0 
+max_attempts = 5
+
+while attempts < max_attempts :   # 0 < 5 
+    print("attempt  ==>",attempts+1)
+    guess = int(input("enter your guess  number: ")) 
+    attempts +=1
+    if guess <secret_number :
+        print("low")
+    elif guess > secret_number:
+        print("high")
+    else :
+        print("correct .....huuhhuhh ... you win")
+        break 
+else :
+    print("sorry you lost  not  guessing correct number.")
+    print(f"the secret number is {secret_number}")
+    
