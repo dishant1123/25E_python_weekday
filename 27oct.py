@@ -73,3 +73,17 @@ else :
     print("sorry you lost  not  guessing correct number.")
     print(f"the secret number is {secret_number}")
     
+# word  gueesing  game  : 
+"""
+com_choice = ["python","java","c++","c","c#","java script","ruby","php","sql","html","css"]
+
+user_attempts  max =5 
+"""
+
+# coin toss  : head or tail 
+"""
+1. head  2. tail 
+t   user  loss   == > user h  ==> h  win 
+
+"""
+
