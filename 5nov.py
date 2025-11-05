@@ -70,3 +70,40 @@ e2.show()
 p=person()
 p.display()
 """
+
+# bank  : 
+
+"""class bank : 
+    def __init__(self,name,bank_name,account_number):
+        self.name=name
+        self.bank_name=bank_name
+        self.account_number=account_number
+        self.balance=25000
+    
+    def deposit(self,amount):  # deposit ==>5K  ==bal =30000
+        self.balance =  self.balance +amount 
+        print(f"deposit :{amount}, balance is :{self.balance}")
+    
+    def withdraw(self,amount):  # min ==>10000 
+        if self.balance -amount >=10000 :   # 30000 -2500 >=10000 
+            self.balance = self.balance -amount
+            print(f"withdraw :{amount}, balance is :{self.balance}")
+        else :
+            print("Insufficient funds and also maintaining the minimum requirement")
+            
+    def check_balance(self):
+        print(f"final balance is :{self.balance}")
+        
+b=bank("krish","HDFC",7801200014352)
+print("Your balance is :",b.balance)
+b.deposit(5000)
+b.withdraw(2500)
+b.check_balance()
+"""
+# atm  :  acc num   ==>pin 
+"""
+1. pin  user  ==> ask user to enter the  pin  ==> create 1211 accnumber create  
+
+option 1 verfiy re enter  your pin  ==> 1211  accnumber  ==>   match  ==> exit 
+option 2 : pin accnumber  ==> fix  
+"""
