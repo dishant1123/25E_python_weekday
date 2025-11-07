@@ -106,4 +106,10 @@ b.check_balance()
 
 option 1 verfiy re enter  your pin  ==> 1211  accnumber  ==>   match  ==> exit 
 option 2 : pin accnumber  ==> fix  
+
+menu  driven : 
+
+1. create  user name  , password    ==> 25000 balance 
+
+login  : username  password   ==> deposit with check  
 """
