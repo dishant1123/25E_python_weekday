@@ -78,6 +78,6 @@ id  name  age  salary
 1    ram    55   9000
 2    sita   53    8000
 
-key = [name  age  salary ] 
+key = [name  age  salary ]   ==>del decorator  
 [1 name age salary  ]
 """
