@@ -1,7 +1,7 @@
 # inheritance : to inherit  another  class propertries  . 
 """
 1. single level inheritance
-2. multiple level inheritance
+2. multi level inheritance
 3. multiple inheritance
 4. hierarchical inheritance
 5.hybrid inheritance
