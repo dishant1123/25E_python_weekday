@@ -23,7 +23,7 @@ p.show()  # not  change bcz  of  private member
 
 # encap : 
 
-class person : 
+"""class person : 
     def __init__(self,name,age):
         self.__name =name
         self.__age=age  
@@ -50,3 +50,46 @@ p.set_name("yash patel")
 p.set_new_age(22)
 print(p.get_age())
 print(p.get_name())
+"""
+
+# inheritance   +encapsulation : 
+"""
+protected : 
+
+_age ==> protected member
+__name ==> private member 
+"""
+
+class person : 
+    def __init__(self,name,age):
+        self.name =name  # public member 
+        self._age =age  # protected member
+        self.__salary = 50000  # private member
+        
+    def display(self):
+        print("name :",self.name)
+        print("age :",self._age)
+        
+    def get_salary(self):
+        return self.__salary
+    
+    def set_salary(self,new_salary):
+        self.__salary = new_salary
+
+class employee(person):
+    def __init__(self, name, age,emp_id):
+        super().__init__(name, age)
+        self.emp_id = emp_id
+    
+    def display(self):
+        super().display()
+        print("emp_id :",self.emp_id)
+        print("salary :",self.get_salary()) 
+
+e=employee("vatsal",21,12345)
+print("without using set method : ")
+e.display()
+        
+print("using set method : ")
+e.set_salary(60000)
+e.display()
