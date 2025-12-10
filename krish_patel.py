@@ -285,7 +285,7 @@ C.show()
 
 # 5 : hybrid inheritance : it is combination  of more than one type  of inheritance. 
 
-class a : 
+"""class a : 
     def display(self):
             print("a class method")
             
@@ -306,5 +306,41 @@ D.display()  # a class method
 D.info_d()  # d class method  
 D.show() # b class method
 D.info()  # c class method
+"""
+
+# encapsulation  :
+"""
+1. private member   ==> access  
+2. single  unit 
+
+2 method  ===> 1 . get method ==> print  data 
+              2 . set method ==> set new value
+"""
+
+class employee:
+    def __init__(self):
+        self.__name ="harpal"
+        self.__age =21
+        self.__salary =60000 
+        
+    def get_name(self):
+        return self.__name
+
+    def get_salary(self):
+        return self.__salary
+    
+    def set_salary(self,new_salary):
+        self.__salary = new_salary
+
+e=employee()
+print("before using set")
+print("name is :",e.get_name())
+print("salary is :",e.get_salary())
+
+print("using set method :")
+e.set_salary(100000)
+print("salary is :",e.get_salary())
 
 
+    
+        
