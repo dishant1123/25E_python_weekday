@@ -114,7 +114,7 @@ p1.show()
 
 # 4 : constructor overloading
 
-class person : 
+"""class person : 
     def __init__(self):
         print("my name is krish.")
         print("live in ahm.")
@@ -130,4 +130,45 @@ class person :
 
 p=person()
 p.show()
+"""
+
+# oop 4 pillar :
+"""
+1. inheritance
+2. encapsulation
+3. polymorphism
+4. abstraction
+"""
+
+# inheritance : to inherit from a another class property and method. 
+"""
+1.single inheritance
+2.multiple inheritance
+3.multi level inheritance
+4.hierarchical inheritance
+5.hybrid inheritance
+"""
+
+#1 : single inheritance
+
+class vehicle :
+    def __init__(self):
+        self.type ="four wheeler"
+        self.seating_cap=5
+
+class car(vehicle):
+    def __init__(self,model,color):
+        # super().__init__()  # base class constructor called 
+        vehicle.__init__(self)  # 
+        self.model=model
+        self.color=color
     
+    def show(self):
+        print("vehicle type is :",self.type)
+        print("seating cap is :",self.seating_cap)
+        print("model is :",self.model)
+        print("color is :",self.color)
+        
+c=car("Audi-A4","red")
+c.show()
+        
