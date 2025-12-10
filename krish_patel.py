@@ -151,7 +151,7 @@ p.show()
 
 #1 : single inheritance
 
-class vehicle :
+"""class vehicle :
     def __init__(self):
         self.type ="four wheeler"
         self.seating_cap=5
@@ -171,4 +171,76 @@ class car(vehicle):
         
 c=car("Audi-A4","red")
 c.show()
+"""
+
+# 2 : multiple inheritance
+
+"""
+class a : 
+class b :
+class c(a,b)
+"""
+
+"""class father:
+    def __init__(self,f_name):
+        self.f_name=f_name
+
+class mother :
+    def __init__(self,m_name):
+        self.m_name=m_name
+
+class child(father,mother):  #MRO : method resolution order
+    def __init__(self, c_name,f_name,m_name):
+        father.__init__(self,f_name)
+        mother.__init__(self,m_name)
+        self.c_name=c_name
         
+    def show(self):
+        print("family info :")
+        print("father name :",self.f_name)
+        print("mother name :",self.m_name)
+        print("child name :",self.c_name)
+
+c=child("harpal","ramesh","ramila")
+c.show()
+"""
+
+# 3 : multi level inheritance
+"""
+class a:
+class b (a) :
+class c(b):
+"""
+class vehicle :
+    def __init__(self,type,seating_cap):
+        self._type =type
+        self._seating_cap=seating_cap
+    def show(self):
+        print("vehicle type is :",self._type)
+        print("seating cap is :",self._seating_cap)
+
+class car(vehicle):
+    def __init__(self,model,type,seating_cap,color):
+        super().__init__(type,seating_cap)
+        self.model=model
+        self.color=color
+    def show_1(self):
+        self.show()
+        print("model is :",self.model)
+        print("color is :",self.color)
+
+class car_2(car):
+    def __init__(self, model, color,speed,type,seating_cap):
+        super().__init__(model, color,type,seating_cap)
+        self.speed =speed 
+    
+    def display(self):
+        self.show_1()
+        print("speed is :",self.speed)
+    
+c=car_2("Audi-A6","red","fast","four wheeler",5)
+c.display()        
+        
+        
+c1=car("Audi-A4","four wheeler",5,"red")
+c1.show_1()
