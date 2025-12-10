@@ -211,7 +211,7 @@ class a:
 class b (a) :
 class c(b):
 """
-class vehicle :
+"""class vehicle :
     def __init__(self,type,seating_cap):
         self._type =type
         self._seating_cap=seating_cap
@@ -240,7 +240,71 @@ class car_2(car):
     
 c=car_2("Audi-A6","red","fast","four wheeler",5)
 c.display()        
-        
-        
 c1=car("Audi-A4","four wheeler",5,"red")
 c1.show_1()
+"""
+
+#4.hierarchical inheritance : multiple  derived class inherit  from same base class.
+
+"""
+class a : 
+class b(a):
+class c(a):
+
+"""
+
+"""class a :
+    def __init__(self):
+        self.name ="ved"
+        self.age =21 
+
+class b(a):
+    def __init__(self):
+        super().__init__()
+        self.hobby ="playing cricket"
+
+    def show(self):
+        print("name is :",self.name)
+        print("age is :",self.age)
+        print("hobby is :",self.hobby)
+class c(a):
+    def __init__(self):
+        super().__init__()
+        self.clg = "LJ"
+    def show(self):
+        print("name is :",self.name)
+        print("age is :",self.age)
+        print("clg is :",self.clg)
+
+B=b()
+B.show()
+
+C=c()
+C.show()
+"""
+
+# 5 : hybrid inheritance : it is combination  of more than one type  of inheritance. 
+
+class a : 
+    def display(self):
+            print("a class method")
+            
+class b (a):
+    def show(self):
+        print("b class method")
+
+class c(a):
+    def info(self):
+        print("c class method")
+
+class d(b,c):
+    def info_d(self):
+        print("d class method")
+        
+D=d()
+D.display()  # a class method
+D.info_d()  # d class method  
+D.show() # b class method
+D.info()  # c class method
+
+
