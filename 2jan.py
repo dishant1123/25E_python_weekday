@@ -28,7 +28,7 @@ p.show()
 """
 
 # private  : 
-class employees : 
+"""class employees : 
     __name="aashta"
     __age=19 
 
@@ -42,3 +42,73 @@ e.show()
 e.__name="krishna"
 e.__age=21
 e.show()
+"""
+
+# protected : 
+"""
+class employees :
+    _name ="aashta"
+    _salary=90000 
+    
+class manger(employees):
+    def show(self):
+        print("name is  : ",self._name)
+        print("salary is  : ",self._salary)
+    
+m=manger()
+m.show()
+"""
+# constructor  : 
+"""
+1. automatically called when an object is created
+2. can be called explicitly
+3. can be overloaded
+4. no return value 
+
+types : 
+1. default constructor
+2. non  parameterized constructor
+3. parameterized constructor
+4. overloaded constructor
+"""
+# default constructor :
+"""
+class person : 
+    def __init__(self):  #__init__ ==> constructor / special  method 
+        print("my  name is krishna")
+        print("live in ahm.")
+p=person()    
+"""
+
+# non parameterized constructor :
+
+"""class person : 
+    def __init__(self):
+        self.name ="krishna"
+        self.city ="ahm"
+        print("non parameterized constructor")
+        
+    def show(self):
+        print("name is  : ",self.name)
+        print("city is  : ",self.city)
+p=person()
+p.show()
+print("name is  : ",p.name)
+print("city is  : ",p.city)
+"""
+
+# parameterized constructor :
+
+"""
+class person : 
+    def __init__(self,name, city):
+        self.name =name 
+        self.city =city
+    def show(self):
+        print("name is  : ",self.name)
+        print("city is  : ",self.city)
+p=person("krishna","ahm")
+p.show()
+print("name is  : ",p.name)
+print("city is  : ",p.city)
+"""
