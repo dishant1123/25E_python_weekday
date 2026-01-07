@@ -85,3 +85,24 @@ class manager(employee):
         
 m=manager("raj",90000,"sr.accontant")
 m.show()
+
+"""
+Implement the following hierarchy . The Book function has name, n (number of authors), authors (list of authors), publisher, ISBN, and year as its data members and the derived class has course as its data member. The derived class 
+method overrides (extends) the methods of the base class. 
+
+hint  : 
+book 
+    name , n ,publisher , isbn year 
+    
+    function  ==, show()
+
+textbook(book)
+    course 
+    function  ==> show ()  class ==> book.show()
+    
+ex : 
+    name = abc 
+    n  =3 
+    authors = ["raj","krishna","harry"]
+     
+"""
