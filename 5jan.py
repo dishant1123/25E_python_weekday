@@ -119,3 +119,13 @@ Sample Output:
 The bus seating capacity is 50. so, the final fare amount should be 5000+500=5500.
 The car seating capacity is 5. so, the final fare amount should be 500.
 """
+
+# MRO  ==> method resolution order
+
+"""
+class a :
+class b :
+class c(b,a):
+    a.__init__(self)
+    b.__init__(self)
+"""
