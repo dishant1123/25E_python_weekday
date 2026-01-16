@@ -50,7 +50,7 @@ print(b.getbalance())
 """
 # ex :2 
 
-class bankaccount : 
+"""class bankaccount : 
     def __init__(self):
         self.__balance =25000 
         
@@ -85,3 +85,4 @@ b.deposit(10000)
 b.withdraw(25000)
 print("after deposit  and withdraw your balance is  : ",b.get_balance())
 
+"""
