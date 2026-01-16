@@ -50,7 +50,7 @@ it happens when base class provides its own implementation of a method already i
 derived class.
 """
 
-class vehicle :
+"""class vehicle :
     def speed(self):
         print("max speed of the vehicle is  : 180")
         
@@ -61,7 +61,7 @@ class car(vehicle):
    
 c=car()
 c.speed()
-
+"""
 """
 c++ java  : 
 
@@ -88,3 +88,55 @@ int main()
     
 }
 """
+
+# method  overloading : 
+
+"""class payment : 
+    def pay(self,amount,method ="cash" ):
+        if method =="cash" :
+            print("cash  payment  :  ",amount)
+        elif method =="card" :
+            print("card  payment  :  ",amount)
+        else :
+            print("UPI  payment  :  ",amount)
+            
+p=payment()
+p.pay(1000)
+p.pay(10000,"card")
+p.pay(100000,"UPI")
+"""
+# same method  ==> pay  , diff arg  ==> behavior changes based on input 
+
+# method  overriding : 
+
+"""
+all banks are give interest. 
+but  each bank  has  different  interest rate.
+"""
+class bank :
+    def interest(self):
+        print("interest  :  5% ")
+
+class SBI(bank):
+    def interest(self):
+        print("SBI interest  :  7% ")
+
+class HDFC(bank):
+    def interest(self):
+        print("HDFC interest  :  10% ")
+ 
+b1= SBI()
+b2= HDFC()
+
+b1.interest()
+b2.interest()
+
+
+# method  same  , base class give its  own implementation  , derived class override it.
+
+# conculsion  : 
+"""
+overloading : same work  different inputs 
+overriding  :  same work  different objects 
+"""
+
