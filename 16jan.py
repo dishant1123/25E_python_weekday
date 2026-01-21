@@ -140,3 +140,49 @@ overloading : same work  different inputs
 overriding  :  same work  different objects 
 """
 
+"""
+Write a Python program to find the Net Salary of an Employee using Inheritance, Encapsulation, and Polymorphism.
+
+Create three classes: Employee, Perks, and NetSalary.
+
+Requirements
+🔹 Employee Class
+
+Use encapsulation (private data members).
+
+Data members: employee id, name, basic salary.
+
+Methods:
+
+To get employee details from the user.
+
+To display employee details.
+
+To return basic salary.
+
+Create a method calculate_salary() that will be overridden (polymorphism).
+
+🔹 Perks Class (inherits Employee)
+
+Calculate:
+
+DA = 35% of basic salary
+HRA = 17% of basic salary
+PF = 12% of basic salary
+
+Method to display DA, HRA, PF.
+
+Override calculate_salary() method.
+
+🔹 NetSalary Class (inherits Perks)
+
+Calculate total salary:
+
+Net Salary = Basic Salary + DA + HRA − PF
+
+Display employee details, perks, and net salary.
+
+Demonstrate method overriding (runtime polymorphism).
+
+📌 It is compulsory to create objects and demonstrate the methods with correct output
+"""
