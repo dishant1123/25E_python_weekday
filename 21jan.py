@@ -95,4 +95,20 @@ for i in accounts :
 2. create pin  : 
     pin : 9000 
     verify  the pin when  you choose  current  or saving  
+
+
+"""
+# task  :2 
+"""
+Create an abstract class named Shape. 
+Create an abstract method named calculate_area for the Shape class.
+Create Two Classes named Rectangle and Circle which inherit Shape class.
+Create calculate_area method in Rectangle class. It should return the area of the rectangle object. (area of rectangle = 
+(length * breadth))
+Create calculate_area method in Circle class. It should return the area of the circle object.
+(area of circle =πr^2))
+Create objects of Rectangle and Circle class.
+The python Program Should also check whether the area of one Rectangle object is greater
+than another rectangle object by overloading > operator.
+Execute the method resolution order of the Circle class. 
 """
