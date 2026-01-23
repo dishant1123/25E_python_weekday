@@ -110,5 +110,97 @@ Create calculate_area method in Circle class. It should return the area of the c
 Create objects of Rectangle and Circle class.
 The python Program Should also check whether the area of one Rectangle object is greater
 than another rectangle object by overloading > operator.
-Execute the method resolution order of the Circle class. 
+"""
+
+# task  :3 
+"""
+Create a program to simulate a Call Handling System using Object-Oriented Programming (OOP) concepts in Python.
+The program must demonstrate the use of the following OOP principles:
+
+1.Abstraction
+2.Inheritance
+3.Encapsulation
+4.Polymorphism
+
+Requirements:
+1. Employee Classes
+Create three classes named:
+	Respondent
+	Manager
+	Director
+
+Each class should have a constructor that accepts id and name.
+The constructor should initialize:
+
+	==>rank
+		3 for Respondent
+		2 for Manager
+		1 for Director
+
+	==>free → a boolean variable initialized to True
+
+2. Common Methods (Demonstrating Abstraction & Inheritance)
+Implement the following methods in all three classes:
+
+	receive_call()
+	Prints:
+	"call received by <employee name>"
+	and sets free to False
+
+	end_call()
+	Prints:
+	"call ended"
+	and sets free to True
+
+	is_free()
+	Returns the value of free
+
+	get_rank()
+	Returns the value of rank
+
+3. Call Class
+
+Create a class Call with a constructor that accepts:
+	id
+	name of the caller
+
+It should initialize a variable assigned to False.
+
+4. CallHandler Class
+
+Create a class CallHandler with three class variables:
+	respondents
+	managers
+	directors
+
+5. Employee Management (Encapsulation)
+
+Implement an add_employee() method in CallHandler that:
+	Accepts an employee object
+	Adds it to the appropriate list based on their rank
+
+6. Call Dispatching (Polymorphism)
+
+Implement a dispatch_call() method in CallHandler that:
+
+Accepts a Call object
+Assigns the call to the first available employee, checking in the order:
+
+	Respondent → Manager → Director
+
+Calls receive_call() on the assigned employee
+Sets the call’s assigned variable to True
+If no employee is free, prints:
+"Sorry! All employees are currently busy."
+
+7. Object Creation
+Create:
+	3 Respondent objects
+	2 Manager objects
+	1 Director object
+Add them to the system using add_employee().
+
+8. Call Assignment
+
+Create a Call object and demonstrate how it is assigned to an employee using the dispatch_call() method.
 """
