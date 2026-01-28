@@ -144,8 +144,7 @@ Implement the following methods in all three classes:
 
 	receive_call()
 	Prints:
-	"call received by <employee name>"
-	and sets free to False
+	"call received by <employee name>" and sets free to False
 
 	end_call()
 	Prints:
@@ -159,15 +158,12 @@ Implement the following methods in all three classes:
 	Returns the value of rank
 
 3. Call Class
-
 Create a class Call with a constructor that accepts:
 	id
 	name of the caller
-
 It should initialize a variable assigned to False.
 
 4. CallHandler Class
-
 Create a class CallHandler with three class variables:
 	respondents
 	managers
@@ -189,7 +185,7 @@ Assigns the call to the first available employee, checking in the order:
 	Respondent → Manager → Director
 
 Calls receive_call() on the assigned employee
-Sets the call’s assigned variable to True
+Sets the call's assigned variable to True
 If no employee is free, prints:
 "Sorry! All employees are currently busy."
 
