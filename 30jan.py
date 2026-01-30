@@ -44,7 +44,7 @@ with  open("aashta.txt","w+") as f:
 #task :1 
 """
 Write a Python program to read a text file and do following: 
-1. Print no. of words 
+1. Print no. of words   ==> string  .split()
 2. Print no. statements    ==> friend.txt 
 
 Friends are crazy, Friends are naughty !
@@ -52,6 +52,21 @@ Friends are honest, Friends are  best !
 Friends are like keygen, friends are like license key !
 We are nothing without friends, Life is not possible without friends !
 """
+
+with  open("friends.txt","r") as f:
+    text = f.read()
+    # print(text)
+
+words = text.split()
+# print(words)
+print("number of  words is : ",len(words)) 
+
+count = 0 
+
+for i in text : 
+    if i in ['.','!','?']:
+        count +=1
+print("number of statements is : ",count)
 
 # task :2 
 """
