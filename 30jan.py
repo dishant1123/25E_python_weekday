@@ -53,7 +53,7 @@ Friends are like keygen, friends are like license key !
 We are nothing without friends, Life is not possible without friends !
 """
 
-with  open("friends.txt","r") as f:
+"""with  open("friends.txt","r") as f:
     text = f.read()
     # print(text)
 
@@ -67,7 +67,7 @@ for i in text :
     if i in ['.','!','?']:
         count +=1
 print("number of statements is : ",count)
-
+"""
 # task :2 
 """
 Write a Python program to reverse the content of a one file and store it in second file and also convert content of second 
@@ -92,4 +92,5 @@ Vowels = 22
 Output 4:
 ! YTHGUAN ERA SDNEIRF ,YZARC ERA SDNEIRF
 """
+
 
