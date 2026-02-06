@@ -35,4 +35,4 @@ cursor.execute("INSERT INTO student(name,age,department) Values('Yash',19,'Sales
 conn.commit()
 print("data inserted successfully")
 cursor.close()
-conn.close()
+conn.close()  
