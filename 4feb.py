@@ -16,15 +16,15 @@ cursor = conn.cursor()
 # cursor.execute("CREATE DATABASE IF NOT EXISTS 25_MWF_python")
 # print("database created successfully")
 
-# cursor.execute("""
-#                CREATE TABLE IF NOT EXISTS student(
-#                    id INT  AUTO_INCREMENT PRIMARY KEY,
-#                    name VARCHAR(50),
-#                    age INT,
-#                    department VARCHAR(50)
-#                )
-#                """)
-# print("table created successfully")
+cursor.execute("""
+               CREATE TABLE IF NOT EXISTS student(
+                   id INT  AUTO_INCREMENT PRIMARY KEY,
+                   name VARCHAR(50),
+                   age INT,
+                   department VARCHAR(50)
+               )
+               """)
+print("table created successfully")
 
 cursor.execute("INSERT INTO student(name,age,department) Values('Krishna',21,'Computer')")
 cursor.execute("INSERT INTO student(name,age,department) Values('Krish',20,'HR')")
