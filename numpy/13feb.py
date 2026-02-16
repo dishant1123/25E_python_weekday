@@ -62,6 +62,8 @@ c=np.array([[1,2,3,4],
             [13,14,15,16],
             [17,18,19,20]],dtype=int)
 
+
+print(c[[0,1,2,3],[0,1,2,3]])
 # print(c)
 # print(c[0])
 # print(c[2:4])   # row  slicing 
@@ -82,3 +84,4 @@ task :2
 output  : [1,6,11,16]
          
 """
+
