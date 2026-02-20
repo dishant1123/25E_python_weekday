@@ -82,10 +82,16 @@ print("result is : \n",result)
 
 # statistical :
 
-s=pd.Series([1,2,3,4,5,6,7,8,9,10])
+"""s=pd.Series([1,2,3,4,5,6,7,8,9,10])
 print(s.mean())
 print(s.median())
 print(s.std())
 print(s.var())
 print(s.min())
 print(s.max())
+"""
+
+# s2=pd.Series({"maths":90,"english":80,"physics":70,"chemistry":60,"biology":50,"com":99})
+
+s2=pd.Series([12,14,56,99,56,34,56,78,90,12])
+print(s2[3])
