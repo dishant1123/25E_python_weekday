@@ -73,7 +73,7 @@ it can be string , float whatever we want.
 
 """
 
-df = pd.read_csv("pandas\mckinsey.csv")
+# df = pd.read_csv("pandas\mckinsey.csv")
 
 """print(df.head(20))
 print(df['country'][16])
@@ -111,4 +111,72 @@ que : give me year =2002
 """
 df = df.drop([2,3,6,8]).head(20)
 print(df)
+"""
+
+# sort in data frame  : 
+
+"""
+df = df.sort_values(by="life_exp")  # sort  ==> asc to desc 
+df =df.sort_values(by="gdp_cap",ascending=False)
+
+df = df.sort_values(['year',"life_exp"])
+df = df.sort_values(['year',"life_exp"],ascending=[False,False])
+df = df.sort_values(['year',"life_exp"],ascending=[True,False])
+
+print(df.head(100))
+"""
+
+# join  :  join , concat , merge 
+
+users =pd.DataFrame({
+    "user_id" :[1,2,3],
+    "name" : ["priyanshi","krish","krishna"],
+})
+
+# print(users)
+
+msgs = pd.DataFrame({
+  "user_id" :[1,1,2,4], 
+  "message" : ["hi","hello","hmm","ok"]
+})
+# print(msgs)
+
+# df =pd.concat([users,msgs])
+# df =pd.concat([users,msgs],axis=0)  # axis =0  rows 
+# df =pd.concat([users,msgs],axis=1)   # axis =1  columns
+
+# df =users.merge(msgs)  # inner join  
+
+users.rename(columns={"user_id":"id"},inplace=True)
+
+# df =users.merge(msgs,left_on="id",right_on="user_id")
+# df =users.merge(msgs,left_on="id",right_on="user_id",how="left")
+# df =users.merge(msgs,left_on="id",right_on="user_id",how="right")
+df = users.merge(msgs,left_on="id",right_on="user_id",how="outer")
+
+print(df)
+
+"""
+153 : left 
+1. 
+   id       name  user_id message
+0   1  priyanshi      1.0      hi
+1   1  priyanshi      1.0   hello
+2   2      krish      2.0     hmm
+3   3    krishna      NaN     NaN
+
+154 : right 
+   id       name  user_id message
+0  1.0  priyanshi        1      hi
+1  1.0  priyanshi        1   hello
+2  2.0      krish        2     hmm
+3  NaN        NaN        4      ok
+
+155 : outer 
+    id       name  user_id message
+0  1.0  priyanshi      1.0      hi
+1  1.0  priyanshi      1.0   hello
+2  2.0      krish      2.0     hmm
+3  3.0    krishna      NaN     NaN
+4  NaN        NaN      4.0      ok
 """
